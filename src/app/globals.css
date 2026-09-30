@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+@theme {
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: #fafafa;
+  color: #18181b;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+/* Native <dialog> backdrop */
+dialog::backdrop {
+  background: rgb(24 24 27 / 0.45);
+  backdrop-filter: blur(2px);
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+@keyframes pin-pop {
+  from {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+.pin-pop {
+  animation: pin-pop 160ms ease-out;
+}

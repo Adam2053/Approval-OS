@@ -1,7 +1,11 @@
 # Approval OS — MVP Plan
 
-> Status: **DRAFT, waiting on decisions.** No code gets written until the Decision Register (section 8) is filled in.
-> Every decision below has a recommendation, but none of them is final until you mark it.
+> Status: **Decisions locked, MVP built.** See the README for how to run it.
+>
+> **Your decisions:** full Slack-style team chat, plus project discussions with a decision log (D11 → C, plus decision log) ·
+> one client approver's decision is final (D7 → A) · anyone assigned to a project can request approvals ·
+> per-project "internal approval first" toggle, on by default · India + global markets, WhatsApp-first sharing
+> (automated WhatsApp ingestion comes after the MVP). Every other decision uses the recommendation below.
 
 ---
 
