@@ -20,6 +20,16 @@ No database or API keys are needed to try it:
 
 To test the client side, send an approval, copy the review link, and open it in a private/incognito window or on your phone.
 
+## Share a public link from your machine (ngrok)
+
+```bash
+npm run build
+ngrok http 3000                                   # copy the https://….ngrok-free.app URL
+BETTER_AUTH_URL=https://YOUR-ID.ngrok-free.app npm start
+```
+
+`BETTER_AUTH_URL` must match the public URL. Otherwise sign-in is rejected (origin check) and review links point to localhost.
+
 ## Deploy (Vercel + Neon, free tiers)
 
 1. Create a Postgres database on [Neon](https://neon.tech) (or Supabase) and copy the connection string.
